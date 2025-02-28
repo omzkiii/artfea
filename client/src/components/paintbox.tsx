@@ -1,6 +1,4 @@
-import React from "react";
 import "./paintbox.css";
-import { Link } from "react-router";
 
 type Painting = {
   id: number;

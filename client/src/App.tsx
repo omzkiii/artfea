@@ -1,7 +1,4 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
 import "./App.css";
-import Particles from "./components/particles";
 
 function App() {
   return (

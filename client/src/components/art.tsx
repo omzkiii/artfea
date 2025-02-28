@@ -1,13 +1,7 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import "./art.css";
-
-type Painting = {
-  url: string;
-  title: string;
-  description: string;
-};
 
 function Art() {
   type Painting = {
@@ -20,7 +14,7 @@ function Art() {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3000/image", id)
+      .post("http://localhost:8000/image", id)
       .then((res) => {
         setData(res.data);
       })

@@ -1,5 +1,6 @@
-import express, { Request, Response } from "express";
-import cors from "cors";
+import { Request, Response } from "express";
+import * as express from "express";
+import * as cors from "cors";
 import initDB from "./database";
 // import dotenv from "dotenv";
 
@@ -41,7 +42,7 @@ initDB()
       res.send("hi");
     });
 
-    app.listen(3000, "0.0.0.0", () => {
+    app.listen(8000, "0.0.0.0", () => {
       console.log("SERVER RUNNING on port 80");
     });
   })

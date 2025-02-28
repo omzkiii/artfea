@@ -65,13 +65,6 @@ const Particles = () => {
         `;
       return shadow;
     };
-    // Get actual full height of scrollable document
-    const fullHeight = Math.max(
-      // document.body.scrollHeight,
-      document.documentElement.scrollHeight,
-      // document.documentElement.offsetHeight,
-      // document.documentElement.clientHeight,
-    );
     const newParticles: Particle[] = Array.from({ length: 30 }).map(
       (_, index) => {
         const color = colors[Math.floor(Math.random() * colors.length)];
