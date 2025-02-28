@@ -1,0 +1,37 @@
+.title {
+  font-family: "Outfit";
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+h1 {
+  font-style: none;
+  font-weight: 500;
+}
+
+#artfea {
+  font-size: 10vw;
+  font-style: italic;
+  display: flex;
+  /* color: var(--pastel-green); */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-shadow: 1px 1px 20px var(--pastel-pink);
+}
+
+#artfea > h1:hover {
+  color: #fff;
+  text-shadow:
+    1px 1px 20px var(--pastel-pink3),
+    1px 1px 15px var(--pastel-pink2),
+    1px 1px 10px var(--pastel-pink1),
+    1px 1px 5px var(--pastel-red);
+  transition: all 0.5s ease-in-out;
+}
+#artfea > h1:not(:hover) {
+  color: #696969;
+  text-shadow: 1px 1px 20px var(--pastel-pink);
+  transition: all 0.5s ease-in-out;
+}

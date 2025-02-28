@@ -1,0 +1,67 @@
+.particle {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 100%;
+  transform-origin: top left;
+  filter: blur(10px);
+}
+
+#particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  /* background: linear-gradient( */
+  /*   to bottom, */
+  /*   #fff, */
+  /*   var(--pastel-white2), */
+  /*   var(--pastel-white) */
+  /* ); */
+  background-color: #fff;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: translate(-500%, -500%) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-500%, -500%) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(-500%, -500%) rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-500%);
+  }
+
+  50% {
+    transform: translateY(500%);
+  }
+
+  100% {
+    transform: translateY(-500%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-500%) translateY(-100%);
+  }
+
+  50% {
+    transform: translateX(500%) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(-500%) translateY(-100%);
+  }
+}

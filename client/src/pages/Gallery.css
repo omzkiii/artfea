@@ -1,0 +1,24 @@
+#gallery {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+}
+#paintings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fit, minmax(21lvh, 1fr)); */
+  /* grid-template-rows: repeat(auto-fit, minmax(21lvw, 1fr)); */
+  width: 1fr;
+  /* height: 1fr; */
+  max-width: 150rem;
+  gap: 0px; /* Space between images */
+}
+
+#gallerytxt {
+  color: #696969;
+  padding: 0lvi 12lvw;
+  font-weight: 300;
+  font-size: 7vi;
+  text-shadow: -2px 2px 10px var(--pastel-pink2);
+}

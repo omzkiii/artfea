@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Pacifico&display=swap");
+#root {
+  --pastel-peach: #fbd1d3;
+  --pastel-pink: #f198af;
+  --pastel-magenta: #ebb2d6;
+  --pastel-purple: #9f81cd;
+  --pastel-indigo: #766dc1;
+  --pastel-white: #fcf9e4;
+  --pastel-blue: #b7bef7;
+  --pastel-pink2: #f7c7ce;
+  --pastel-pink3: #f8bac8;
+  --pastel-green: #77dd88;
+  --pastel-green1: #c1e1c1;
+  --pastel-green2: #d4f1d4;
+  --pastel-green3: #a3d9a5;
+  --pastel-green4: #e6ffe6;
+  --pastel-yellow: #ffffba;
+  --pastel-indigo2: #a7abed;
+  --pastel-red: #ffa7a6;
+  --pastel-white2: #fff1f0;
+  --pastel-pink4: #ffd7d7;
+  --pastel-yellow2: #f3f5a9;
+  --pastel-sky: #d0e4ee;
+
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* display: flex; */
+  justify-content: center;
+}
+body {
+  opacity: 1;
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

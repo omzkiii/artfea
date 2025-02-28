@@ -1,0 +1,32 @@
+#imgsrc {
+  width: 21vw;
+  height: 21vw;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  object-fit: cover;
+}
+#img {
+  margin: 1dvb;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 10px #121212aa;
+}
+#img:hover {
+  box-shadow: 0px 0px 100px var(--pastel-white);
+  transition: all 0.5s ease-in-out;
+}
+#img:not(:hover) {
+  box-shadow: 3px 3px 10px #121212aa;
+  transition: all 3s linear;
+}
+
+#paintings:not(:hover) {
+  opacity: 1;
+  transition: all 2s linear;
+}
+
+#paintings {
+  max-width: 90vw;
+}

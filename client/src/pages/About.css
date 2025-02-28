@@ -1,0 +1,17 @@
+#aboutTxt {
+  font-family: "Outfit";
+  color: #696969;
+  padding: 0lvi 12lvw;
+  font-weight: 300;
+  font-size: 7vi;
+  text-shadow: -2px 2px 10px var(--pastel-pink2);
+}
+
+#about {
+  font-family: "Pacifico";
+  color: #696969;
+  padding: 0lvi 12lvw;
+  font-weight: 100;
+  font-size: 3vi;
+  text-shadow: -2px 2px 10px var(--pastel-pink2);
+}

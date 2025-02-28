@@ -1,0 +1,32 @@
+version: "3"
+services:
+  client:
+    build: ./client
+    container_name: artfea-client
+    volumes:
+      - ./client:/app
+    ports:
+      - "5173:80"
+    command: ["npm", "run", "dev"]
+    networks:
+        - artfea_network
+  server:
+    build: ./server
+    container_name: artfea-server
+
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+      # - ./server/database.sqlite:/app/database.sqlite
+    ports:
+      - "3000:3000"
+    command: ["npm", "run", "dev"]
+    networks:
+        - artfea_network
+
+
+networks:
+  artfea_network:
+    name: artfea_network
+    driver: bridge
+
